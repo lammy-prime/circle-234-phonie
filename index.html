@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phonie</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <h2>make some magic here!!</h2>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <section class="container">
+        <h2 class="logo">Phonie</h2>
+      </section>
+    </nav>
+
+    <main class="container">
+      <h1>Welcome to Phonie</h1>
+      <h2>
+        Check the service provider of any Nigerian mobile phone number and
+        verify if the number is valid.
+      </h2>
+
+      <form autocomplete="off">
+        <section>
+          <input
+            type="tel"
+            id="telephone_number"
+            placeholder="Enter phone number..."
+          />
+          <ul id="suggestions" class="hide"></ul>
+        </section>
+        <!--<button>CHECK</button>-->
+      </form>
+
+      <div id="message" class="hide">
+        <img src="" alt="Logo or Warning Icon" id="network-logo" />
+        <p id="message-display"></p>
+      </div>
+    </main>
+
+    <footer></footer>
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
-</body>
+  </body>
 </html>

@@ -1,0 +1,197 @@
+/* === Font Family === */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500;600&display=swap");
+
+:root {
+  /* ==== Colours ==== */
+
+  /* === Primary Colours === */
+  --green: #03ef62;
+  --navy-blue: #05192d;
+
+  /* === Secondary === */
+  --sky-blue: #06bdfc;
+  --red: #ff5400;
+  --orange: #ff931e;
+  --purple: #7933ff;
+  --pink: #ff6ea9;
+  --yellow: #fcce0d;
+
+  /* === Neutral === */
+  --beige-300: #e5e1da;
+  --beige-400: #e5e1da;
+
+  --grey-300: #e8e8ea;
+  --grey-400: #d9d9e2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  background-color: var(--beige-300);
+  color: var(--navy-blue);
+}
+
+.container {
+  max-width: 700px;
+}
+
+nav,
+main,
+footer {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: var(--navy-blue);
+  color: #fff;
+}
+
+nav section {
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+main h1 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  color: var(--purple);
+}
+
+main h2 {
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+main form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+main form input {
+  padding: 0.7rem;
+  border-radius: 4px;
+  border-color: var(--navy-blue);
+  font-size: 18px;
+  width: 100%;
+}
+
+main form ul {
+  list-style: none;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid var(--navy-blue);
+  text-align: left;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+main form ul li {
+  border-bottom: 1px solid var(--navy-blue);
+  padding: 5px;
+}
+
+main form ul li:nth-last-child(1) {
+  border: none;
+}
+
+main form button {
+  width: 29%;
+  border: 2px solid var(--navy-blue);
+  border-radius: 4px;
+  background-color: var(--green);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main form button:hover {
+  background-color: var(--pink);
+}
+
+main div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+main div img {
+  border-radius: 5px;
+  width: 60px;
+  margin-right: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.yellow-border {
+  border-left: 4px solid var(--yellow);
+}
+
+.green-border {
+  border-left: 4px solid var(--green);
+}
+
+.red-border {
+  border-left: 4px solid var(--red);
+}
+
+@media only screen and (max-width: 768px) {
+  main h1 {
+    font-size: 2rem;
+  }
+
+  main h2 {
+    font-size: 1.2rem;
+  }
+
+  main form {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  main section {
+    width: 100%;
+  }
+
+  main form input {
+    width: 100%;
+  }
+
+  main form button {
+    width: 100%;
+    padding: 0.7rem;
+  }
+}
