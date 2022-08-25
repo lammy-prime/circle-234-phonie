@@ -138,7 +138,7 @@ function autoComplete(phone_number, num_prefix_store) {
   let ul = document.getElementById("suggestions");
   ul.classList.remove("hide");
   ul.addEventListener("click", (e) => {
-    selectSuggestion(e, phone_number);
+    selectSuggestion(e);
   });
 
   if (phone_number == "" || phone_number.length > 4) {
@@ -165,7 +165,7 @@ function autoComplete(phone_number, num_prefix_store) {
     ul.innerHTML = ul.innerHTML + `<li>${value}</li>`;
   }
 
-  function selectSuggestion(e, phone_number) {
+  function selectSuggestion(e) {
     let user_input = document.getElementById("telephone_number");
     if (e.target.tagName === "LI") {
       user_input.value = e.target.textContent;
